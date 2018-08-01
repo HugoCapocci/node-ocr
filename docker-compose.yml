@@ -1,0 +1,9 @@
+version: '2'
+services:
+  tesseract:
+    build: .
+    volumes:
+      - '.:/code:cached'
+    command: tail -f /dev/null
+    ports:
+      - '9229:9229'

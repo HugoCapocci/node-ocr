@@ -1,0 +1,14 @@
+{
+  "name": "ocr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "docker-compose exec tesseract node src/main/index.js"
+  },
+  "author": "Hugo Capocci <h.capocci@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "tesseract.js": "1.0.10"
+  }
+}
