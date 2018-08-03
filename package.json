@@ -4,11 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "docker-compose exec tesseract node src/main/index.js"
+    "start": "docker-compose exec tesseract node src/main/index.js",
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
   },
   "author": "Hugo Capocci <h.capocci@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "tesseract.js": "1.0.10"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "jest": "23.4.2"
   }
 }

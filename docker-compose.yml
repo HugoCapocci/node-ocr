@@ -7,3 +7,8 @@ services:
     command: tail -f /dev/null
     ports:
       - '9229:9229'
+
+  # opennlp:
+  #   image: weblicht/service-opennlp
+  #   ports:
+  #     - '8080:8080'
